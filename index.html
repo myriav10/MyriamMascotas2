@@ -1,33 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <style>
-        .mascota {
-            color: chocolate;
-        }
-        .info{
-                background-color: gold;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Mascotas</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Mascotas para tener en casa</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="tipos.html">Tipos de Mascotas</a></li>
-                <li><a href="cuidados.html">Cuidados Básicos</a></li>
-                <li><a href="beneficios.html">Beneficios de Tener Mascotas</a></li>
-                <li><a href="adopcion.html">Adopción y Responsabilidad</a></li>
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html">Inicio</a></li>
+                <li class="navbar-item"><a href="tipos.html">Tipos de Mascotas</a></li>
+                <li class="navbar-item"><a href="cuidados.html">Cuidados Básicos</a></li>
+                <li class="navbar-item"><a href="beneficios.html">Beneficios de Tener Mascotas</a></li>
+                <li class="navbar-item"><a href="adopcion.html">Adopción y Responsabilidad</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <form action="">
+            <fieldset>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre">
+
+                <label for="colorfav">Color Favorito: </label>
+                <input type="color" name="colorfav" id="colorfav">
+
+                <label for="edad">Edad: </label>
+                <input type="number" name="edad" id="edad">
+
+                <label for="edad2">Edad2: </label>
+                <input type="range" name="edad2" id="edad2">
+
+                <label for="fecha">Fecha: </label>
+                <input type="date" name="fecha" id="fecha">
+
+                <input type="file" name="archivo" id="archivo">
+                <input type="email" name="correo" id="correo">
+                
+                <select multiple name="curso" id="curso">
+                    <option value="1">Luis</option>
+                    <option value="4">Julia</option>
+                    <option value="90">Rust</option>
+                </select>
+            </fieldset>
+        </form>
         <article>
             <header>
                 <h2>Inicio</h2>
@@ -56,14 +75,16 @@
             <p>
                 Cada sección está diseñada para proporcionarte los conocimientos y herramientas necesarios para que la experiencia de tener una mascota sea gratificante tanto para ti como para tu nuevo compañero. ¡Esperamos que disfrutes explorando el maravilloso mundo de las mascotas!
             </p>
+            <img width="200px" src="elementos/fotomascotas.png" alt="Foto de mascotas">
             <footer>
                 <hr>
             </footer>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2Qg1tSczxKUeLbrxKXwGI3?utm_source=generator" width="70%" height="200" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </article>
         
     </main>
     <aside>
-
+        <p>Música mientras visitas nuestra página</p>
     </aside>
     <footer>
         <address>
